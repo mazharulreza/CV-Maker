@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DisplayActivity"
+    tools:showIn="@layout/activity_display">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/basicLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:padding="3dp"
+            android:text="Basic Information"
+            android:textSize="24sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/basicInfo"
+            android:layout_below="@id/basicLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:lines="5"
+            android:layout_marginBottom="16dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/skillLabel"
+            android:layout_below="@id/basicInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:padding="3dp"
+            android:text="Skills"
+            android:textSize="24sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Skills"
+            android:layout_below="@id/skillLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:lines="2"
+            android:layout_marginBottom="16dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/languageLabel"
+            android:layout_below="@id/Skills"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:padding="3dp"
+            android:text="Languages"
+            android:textSize="24sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_below="@id/languageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:lines="2"
+            android:layout_marginBottom="16dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/academicLabel"
+            android:layout_below="@id/language"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:padding="3dp"
+            android:text="Academic Information"
+            android:textSize="24sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/academicInfo"
+            android:layout_below="@id/academicLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="6"
+            android:lines="6"
+            android:layout_marginBottom="16dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/experiencesLabel"
+            android:layout_below="@id/academicInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:padding="3dp"
+            android:text="Work Experiences"
+            android:textSize="24sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/experiences"
+            android:layout_below="@id/experiencesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:lines="3"
+            android:layout_marginBottom="16dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/referenceLabel"
+            android:layout_below="@id/experiences"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:padding="3dp"
+            android:text="References"
+            android:textSize="24sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/reference"
+            android:layout_below="@id/referenceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:lines="3">
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
